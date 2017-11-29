@@ -7,6 +7,7 @@
 
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Iceberg|Miltonian|Yatra+One" rel="stylesheet">
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,7 +28,7 @@
 
 	<header class="text-center">
 
-		<h1 class="arc"><em>Front-End Frameworks</em></h1>
+		<h1 class="arc">Front-End Frameworks</h1>
 
 	</header>
 
