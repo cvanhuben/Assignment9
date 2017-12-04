@@ -25,6 +25,17 @@
 		<div class="container card-container">
 			<h1 class="text-center">Frameworks Survey</h1>
 			<form method="post" action="database_action.php">
+
+				<div class="input_set">
+					<label class="col-form-label" for="name">Name</label>
+	    		<input type="text" name="name" class="form-control" id="name" placeholder="Full Name">
+				</div>
+
+				<div class="input_set">
+					<label class="col-form-label" for="email">Email</label>
+		  		<input type="email" name="email" class="form-control" id="email" placeholder="email@email.com">
+				</div>
+
 				<h2>What is your favorite front-end framework?</h2>
 				<div class="input_set">
 					<p>
@@ -135,18 +146,14 @@
 				</div>
 
 				<h2>Suggestions</h2>
-				<div class="row input_set">
-					<div class="input-lg col-sm-12">
-						<label class="big" for="suggestion">Do you recommend any other features that you would like to see added?</label>
-						<textarea name="suggestion" id="suggestion" class="materialize-textarea" data-length="300"></textarea>
-					</div>
+				<div class="form-group">
+					<label for="suggestion">Do you recommend any other features that you would like to see added?</label>
+					<textarea name="suggestion" class="form-control" id="suggestion" rows="3"></textarea>
 				</div>
 
-				<div class="row input_set">
-					<div class="input-lg col-sm-12">
-						<label class="big" for="recommend">Do you recommend any other front-end frameworks not listed in this survey?</label>
-						<textarea name="recommend" id="recommend" class="materialize-textarea" data-length="300"></textarea>
-					</div>
+				<div class="form-group">
+					<label for="recommend">Do you recommend any other front-end frameworks not listed in this survey?</label>
+					<textarea name="recommend" class="form-control" id="recommend" rows="3"></textarea>
 				</div>
 
 				<div class="row">
