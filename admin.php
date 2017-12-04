@@ -86,7 +86,7 @@ session_start();
       			<td>
        				<button class="edit_button btn btn-primary" id="edit_button<?php echo $frameworkSurvey['counter'];?>" value="edit" onclick="edit_row('<?php echo $frameworkSurvey['counter'];?>');">Edit
        				</button>
-       				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
+       				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" style="display:none" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
        				</button>
        				<button class="delete_button btn btn-primary" id="delete_button<?php echo $frameworkSurvey['counter'];?>" value="delete" onclick="delete_row('<?php echo $frameworkSurvey['counter'];?>');">Delete
        				</button>
@@ -103,16 +103,21 @@ session_start();
     	</div>
     </div>
 
-    <!-- Downloading jQuery and Materialize -->
+    <!-- Downloading jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
     <script type="text/javascript" src="js/modify_database.js"></script>
 
     <!-- Script for alert popups -->
     <script type="text/javascript">
-    	// Materialize.toast(message, displayLength, className, completeCallback);
-    	Materialize.toast('Saved', 4000) // 4000 is the duration of the toast
-    	Materialize.toast('Delete', 4000) // 4000 is the duration of the toast
+    	
+    	$('form').on('click','.edit_button',function(){
+
+    		$(save_button).show();
+    	});
+
+    	// $('this').parent().find('save_button');
+
     </script>
 
   </body>
