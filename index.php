@@ -22,9 +22,9 @@
 	</head>
 
 	<body>
-		<div class="jumbotron">
+		<div class="jumbotron bg-cover">
       <div class="container">
-        <h1>Front End Frameworks</h1>
+        <h1 class="text-center">Front End Frameworks</h1>
       </div>
     </div>
 
@@ -46,7 +46,7 @@
 							Tell us about your experience!</h2>
 					</div>
 					<div class="row">
-						<a>Take the Survey!</a>
+						<a class="btn btn-primary" href="survey.php" role="button">Take the Survey!</a>
 					</div>
 				</div>
 			</div>

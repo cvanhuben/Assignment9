@@ -1,3 +1,31 @@
+.bg-cover {
+  background-color: #687ade;
+  background-image: url(../images/binary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+
 h1 {
   font-family: 'Fredericka the Great', cursive;
+  color: #fff;
+}
+p, h2, h3, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+  height: 40vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  background-color: #687ade;
+}
+footer>p {
+  color: #a9aac9;
 }
