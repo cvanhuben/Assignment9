@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body class="bg-cover">
-		<div class="container card-container">
+		<div class="container card-container small">
       <h1 class="text-center">Sign Up</h1>
       <p>Please fill this form to create an account.</p>
 
