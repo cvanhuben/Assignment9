@@ -86,7 +86,7 @@ session_start();
       			<td>
        				<button class="edit_button btn btn-primary" id="edit_button<?php echo $frameworkSurvey['counter'];?>" value="edit" onclick="edit_row('<?php echo $frameworkSurvey['counter'];?>');">Edit
        				</button>
-       				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>'); Materialize.toast('Saved', 4000)">Save
+       				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>'); toastr.success('Saved!')">Save
        				</button>
        				<button class="delete_button btn btn-primary" id="delete_button<?php echo $frameworkSurvey['counter'];?>" value="delete" onclick="delete_row('<?php echo $frameworkSurvey['counter'];?>'); Materialize.toast('Delete', 4000)">Delete
        				</button>
