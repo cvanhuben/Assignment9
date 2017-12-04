@@ -1,4 +1,13 @@
-
+<?php
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  header("location: login.php");
+  exit;
+}
+?>
 
 <?php
 	// 1. Create a database connection
@@ -44,6 +53,9 @@
 	<div class="charl">
 
 	<p>This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
+
+	<!-- TEST -->
+	<a href="logout.php">logout</a>
 
 	<table>
 		<tr>
