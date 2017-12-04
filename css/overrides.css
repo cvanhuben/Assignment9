@@ -11,12 +11,32 @@ h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #fff;
 }
+#main-title {
+  font-size: 5em;
+}
 p, h2, h3, a {
   font-family: 'Open Sans', sans-serif;
 }
+a {
+  color: #4574de;
+  font-weight: bold;
+}
+a:hover {
+  color: #2940BA;
+}
+.btn-primary {
+  background-color: #485DCE;
+  border: #2940BA;
+}
+.btn-primary:hover {
+  background-color: #2940BA;
+}
 
 .jumbotron {
-  height: 40vh;
+  padding: 8em;
+}
+.container {
+  overflow: scroll;
 }
 .card-container {
   margin-top: 5em;
@@ -31,10 +51,18 @@ p, h2, h3, a {
 footer {
   position: absolute;
   bottom: 0;
-  height: 8vh;
   width: 100%;
   background-color: #687ade;
 }
+footer .container {
+  padding: 1em;
+}
 footer p {
   color: #a9aac9;
+}
+footer a {
+  color: #a9aac9;
+}
+footer a:hover {
+  color: #;
 }

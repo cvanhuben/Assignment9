@@ -24,13 +24,13 @@
 	<body>
 		<div class="jumbotron bg-cover">
       <div class="container">
-        <h1 class="text-center">Front End Frameworks</h1>
+        <h1 class="text-center" id="main-title">Front End Frameworks</h1>
       </div>
     </div>
 
 		<div class="container">
-			<div class="row">
-				<img src="images/icons.png"/>
+			<div class="row text-center">
+				<img class="align-center" src="images/icons.png"/>
 			</div>
 			<div class="row">
 				<div class="col-6">
@@ -58,8 +58,8 @@
 					<div class="col-6">
 						<p>Copyright (C) 2017</p>
 					</div>
-					<div class="col-6">
-						<p>Own this site? <a href="login.php">Login!</a></p>
+					<div class="col-6 text-right">
+						<p>Own this site? <a href="login.php">Login</a></p>
 					</div>
 				</div>
 			</div>
