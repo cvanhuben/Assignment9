@@ -47,10 +47,20 @@ a:hover {
   color: #687ade;
   padding: 1em;
 }
+.card-container.small {
+  width: 50%;
+  padding-bottom: 4em;
+  border-radius: 2em;
+}
+
+#welcome{}
 
 form {
   padding-left: 5em;
   padding-right: 5em;
+}
+.form-group>label {
+  font-size: 1.25rem;
 }
 .input_set {
   margin-bottom: 3em;
