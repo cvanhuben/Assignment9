@@ -34,8 +34,7 @@
 
 	<div>
 
-		<!-- THIS IS TO TEST LOGIN -->
-		<a href="login.php">Login to Admin page</a>
+		
 
 
 		<div class="align-middle row">
