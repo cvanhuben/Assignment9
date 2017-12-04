@@ -52,6 +52,9 @@ form {
   padding-left: 5em;
   padding-right: 5em;
 }
+.form-group>label {
+  font-size: 1.25rem;
+}
 .input_set {
   margin-bottom: 3em;
 }
