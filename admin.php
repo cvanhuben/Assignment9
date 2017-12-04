@@ -54,17 +54,17 @@ session_start();
 
     	<!-- <a href="logout.php">logout</a> -->
 
-    	<table>
+    	<table class="table table-striped table-bordered table-hover">
     		<tr>
-    			<th>ID</th>
-    			<th>Name</th>
-    			<th>Email</th>
-    			<th>Favorite Framework</th>
-    			<th>Favorite Features</th>
-    			<th>Features to Change</th>
-    			<th>Suggested Features</th>
-    			<th>Suggested Framework</th>
-    			<th>Modify</th>
+    			<th scope="col">ID</th>
+    			<th scope="col">Name</th>
+    			<th scope="col">Email</th>
+    			<th scope="col">Favorite Framework</th>
+    			<th scope="col">Favorite Features</th>
+    			<th scope="col">Features to Change</th>
+    			<th scope="col">Suggested Features</th>
+    			<th scope="col">Suggested Framework</th>
+    			<th scope="col">Modify</th>
     		</tr>
 
 <?php
@@ -73,7 +73,7 @@ session_start();
 		// output data from each row
 ?>
 
-    		<tr id="row<?php echo $frameworkSurvey['counter'];?>">
+    		<tr scope="row" id="row<?php echo $frameworkSurvey['counter'];?>">
     			<td id="counter_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['counter'];?></td>
       			<td id="name_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['name'];?></td>
       			<td id="email_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['email'];?></td>
