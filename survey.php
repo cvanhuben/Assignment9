@@ -22,7 +22,7 @@
 	</head>
 
 	<body class="bg-cover">
-		<div class="container">
+		<div class="container card-container">
 			<h1 class="text-center">Frameworks Survey</h1>
 			<form method="post" action="database_action.php">
 				<fieldset>
