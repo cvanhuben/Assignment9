@@ -47,6 +47,11 @@ a:hover {
   color: #687ade;
   padding: 1em;
 }
+.card-container.small {
+  width: 50%;
+  padding-bottom: 4em;
+  border-radius: 2em;
+}
 
 #welcome{}
 

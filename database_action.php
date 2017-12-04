@@ -9,7 +9,7 @@
     $name = Trim(stripslashes($_POST['name']));
     $email = Trim(stripslashes($_POST['email']));
     $framework = Trim(stripslashes($_POST['framework']));
-    
+
     $suggestion = Trim(stripslashes($_POST['suggestion']));
     $recommend = Trim(stripslashes($_POST['recommend']));
 
@@ -22,7 +22,7 @@
 
     $feature = "";
     $improveFeat = "";
-    
+
     $total = count($_POST['feature']);
     $i=0;
     // These print each checked box, working on inputting it into database
@@ -37,7 +37,7 @@
         }
 
     $total = count($_POST['feature']);
-    $i=0;    
+    $i=0;
     if(isset($_POST['improveFeat']))
         foreach ($_POST['improveFeat'] as $improveFeatName) {
             $i++;
@@ -60,67 +60,46 @@
     $result = mysqli_query($connection, $query);
 
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>Assignment 8 - Frameworks Survey</title>
-    
+    <title>Login</title>
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!--Import overrides.css-->
     <link type="text/css" rel="stylesheet" href="css/overrides.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
+  </head>
+  <body class="bg-cover">
+    <div class="container card-container small">
+      <h1 class="text-center">Survey Submission</h1>
 
-<body class="grey darken-3">
-    
-    <div class="container">
-    
-        <div class="charl center-align">
+          <?php
+              if ($result) {
+                  echo "<p class='text-center'>Thanks for completing the survey, $name. Your submission has been successfully recorded!</p>";
+              }
 
-        <header>
+              else {
+                  die("Whoops, it looks like something went wrong.");
+              }
+          ?>
 
-            <h1>Survey Submission</h1>
-
-        </header>
-
-                    <?php
-                        if ($result) {
-                            echo "Thanks for completing the survey, $name. Your submission has been successfully recorded!";
-                        } 
-
-                        else {
-                            die("Whoops, it looks like something went wrong.");
-                        }
-                    ?>
-                        <br>
-                        <br>
-
-						<a href="index.php" class="orange lighten-1 btn waves-effect waves-light">Back to Index</a>
-            
-        </div>
-
+			<a href="index.php" class="btn btn-primary">Back to Index</a>
     </div>
-<!-- Downloading jQuery and Materialize -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-                    
-</body>
-
+  </body>
 </html>
-
-
 
 
 <?php
