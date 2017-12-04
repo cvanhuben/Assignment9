@@ -98,27 +98,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </head>
   <body class="bg-cover">
     <div class="container card-container">
-      <h1 class="text-center">Login</h1>
-      <p>Please fill in your credentials to login.</p>
+      <h1 class="text-center">Admin Log-in</h1>
+      <p class="text-center" id="welcome">Hey There! Welcome Back!</p>
 
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-          <label>Username:<sup>*</sup></label>
-          <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+
+          <input type="text" name="username"class="form-control" placeholder="Email" value="<?php echo $username; ?>">
           <span class="help-block"><?php echo $username_err; ?></span>
         </div>
 
         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-          <label>Password:<sup>*</sup></label>
-          <input type="password" name="password" class="form-control">
+          <input type="password" name="password" class="form-control" placeholder="Password">
           <span class="help-block"><?php echo $password_err; ?></span>
         </div>
 
-        <div class="form-group">
-          <input type="submit" class="btn btn-primary" value="Submit">
+        <div class="form-group text-center">
+          <input type="submit" class="btn btn-primary btn-lg" value="Submit">
         </div>
 
-        <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
       </form>
 
     </div>
