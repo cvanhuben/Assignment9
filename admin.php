@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // If session variable is not set it will redirect to login page
 // UNCOMMENT ME
 // if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
@@ -22,35 +22,36 @@ session_start();
 
 	$result = mysqli_query($connection, $query);
 
-	
+
 ?>
 
 <!doctype html>
 <html>
 <head>
-	<title>Frameworks Survey Table</title>
+  <meta charset="utf-8">
+  <title>Admin</title>
 
-	<!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-	
-	<!--Import overrides.css-->
-    <link type="text/css" rel="stylesheet" href="css/overrides.css">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <!--Import overrides.css-->
+  <link type="text/css" rel="stylesheet" href="css/overrides.css">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="grey darken-3">
 	<div class="container">
 
 	<h1 class="arc center-align">Frameworks Survey: Database Table</h1>
-	
+
 	<div class="charl">
 
 	<p>This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
@@ -75,7 +76,7 @@ session_start();
 	// 3. Use returned data (if any)
 	while($frameworkSurvey = mysqli_fetch_assoc($result)) {
 		// output data from each row
-?>	
+?>
 
 		<tr id="row<?php echo $frameworkSurvey['counter'];?>">
 			<td id="counter_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['counter'];?></td>
@@ -83,7 +84,7 @@ session_start();
   			<td id="email_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['email'];?></td>
   			<td id="favoriteFramework_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['favoriteFramework'];?></td>
   			 <td id="featuresToChange_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['featuresToChange'];?></td>
-  			<td id="favoriteFeature_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['favoriteFeature'];?></td> 
+  			<td id="favoriteFeature_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['favoriteFeature'];?></td>
   			<td id="suggestionFeature_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['suggestionFeature'];?></td>
   			<td id="suggestionFramework_val<?php echo $frameworkSurvey['counter'];?>"><?php echo $frameworkSurvey['suggestionFramework'];?></td>
 
@@ -98,22 +99,22 @@ session_start();
 
   			</td>
  		</tr>
-		
-		
+
+
 
 
 <?php } ?>
 
-	</table>	
-	
+	</table>
+
 	<div class="center-align">
-	
+
 	<a class="orange lighten-1 btn waves-effect waves-light" href="index.php">Back to Survey</a>
-	
+
 	</div>
-	
+
 	</div>
-	
+
 	</div>
 
 
