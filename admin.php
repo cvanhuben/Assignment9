@@ -88,10 +88,16 @@ session_start();
        				</button>
        				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" style="display:none" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
        				</button>
-       				<button class="delete_button btn btn-primary" id="delete_button<?php echo $frameworkSurvey['counter'];?>" value="delete" onclick="delete_row('<?php echo $frameworkSurvey['counter'];?>');">Delete
+       				<button class="delete_button btn btn-primary" id="delete_button<?php echo $frameworkSurvey['counter'];?>" value="delete" onclick="if(confirm('Are you sure you want to delete?'))delete_row('<?php echo $frameworkSurvey['counter'];?>'),alert('Record Deleted');">Delete
        				</button>
       			</td>
      		</tr>
+
+<!-- delete_row('<?php echo $frameworkSurvey['counter'];?>');
+
+if(confirm('Format the hard disk?'))
+alert('You are very brave!');
+else alert('A wise decision!') -->
 
 
 <?php } ?>
@@ -115,6 +121,12 @@ session_start();
 
     		$(save_button).show();
     	});
+
+
+
+
+
+    		);
 
     	// $('this').parent().find('save_button');
 
