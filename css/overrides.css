@@ -11,6 +11,9 @@ h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #fff;
 }
+h2 {
+  font-size: 1.25rem;
+}
 #main-title {
   font-size: 5em;
 }
@@ -35,9 +38,6 @@ a:hover {
 .jumbotron {
   padding: 8em;
 }
-.container {
-  overflow: scroll;
-}
 .card-container {
   margin-top: 5em;
   background-color: #fff;
@@ -46,6 +46,14 @@ a:hover {
 .card-container>h1 {
   color: #687ade;
   padding: 1em;
+}
+
+form {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.input_set {
+  margin-bottom: 3em;
 }
 
 footer {

@@ -25,54 +25,53 @@
 		<div class="container card-container">
 			<h1 class="text-center">Frameworks Survey</h1>
 			<form method="post" action="database_action.php">
-				<fieldset>
-					<div>What is your favorite front-end framework?</div>
-					<div>
-						<p>
-							<input type="radio" name="framework" id="bootstrap" value="Bootstrap">
-							<label for="bootstrap">Bootstrap</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="foundation" value="Foundation">
-							<label for="foundation">Foundation</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="stylus" value="Stylus">
-							<label for="stylus">Stylus</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="materialize" value="Materialize">
-							<label for="materialize">Materialize</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="semantic" value="Semantic">
-							<label for="semantic">Semantic UI</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="pure" value="Pure">
-							<label for="pure">Pure</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="uikit" value ="UIKit">
-							<label for="uikit">UIKit</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="milligram" value="Milligram">
-							<label for="milligram">Milligram</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="skeleton" value="Skeleton">
-							<label for="skeleton">Skeleton</label>
-						</p>
-						<p>
-							<input type="radio" name="framework" id="susy" value="Susy">
-							<label for="susy">Susy</label>
-						</p>
-					</div>
+				<h2>What is your favorite front-end framework?</h2>
+				<div class="input_set">
+					<p>
+						<input type="radio" name="framework" id="bootstrap" value="Bootstrap">
+						<label for="bootstrap">Bootstrap</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="foundation" value="Foundation">
+						<label for="foundation">Foundation</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="stylus" value="Stylus">
+						<label for="stylus">Stylus</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="materialize" value="Materialize">
+						<label for="materialize">Materialize</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="semantic" value="Semantic">
+						<label for="semantic">Semantic UI</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="pure" value="Pure">
+						<label for="pure">Pure</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="uikit" value ="UIKit">
+						<label for="uikit">UIKit</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="milligram" value="Milligram">
+						<label for="milligram">Milligram</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="skeleton" value="Skeleton">
+						<label for="skeleton">Skeleton</label>
+					</p>
+					<p>
+						<input type="radio" name="framework" id="susy" value="Susy">
+						<label for="susy">Susy</label>
+					</p>
+				</div>
 
 
-					<div>Which features of this front-end framework are the most important to you?</div>
-					<div>
+				<h2>Which features of this front-end framework are the most important to you?</h2>
+				<div class="input_set">
 					<p>
 						<input type="checkbox" name="feature[]" id="flex" value="Flexibility">
 						<label for="flex">Flexibility</label>
@@ -103,59 +102,58 @@
 					</p>
 				</div>
 
-					<div >Which features do you think this front-end framework can improve on?</div>
-					<div>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="flex2" value="Flexibility">
-							<label for="flex2">Flexibility</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="browser2" value="Browser Compatability">
-							<label for="browser2">Browser Compatability</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="community2" value="Community & Popularity">
-							<label for="community2">Community & Popularity</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="mobile2" value="Mobile Friendly">
-							<label for="mobile2">Mobile Friendly</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="stability2" value="Stability">
-							<label for="stability2">Stability</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="speed2" value="Speed">
-							<label for="speed2">Speed</label>
-						</p>
-						<p>
-							<input type="checkbox" name="improveFeat[]" id="readability2" value="Readability">
-							<label for="readability2">Code Readability</label>
-						</p>
+				<h2>Which features do you think this front-end framework can improve on?</h2>
+				<div class="input_set">
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="flex2" value="Flexibility">
+						<label for="flex2">Flexibility</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="browser2" value="Browser Compatability">
+						<label for="browser2">Browser Compatability</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="community2" value="Community & Popularity">
+						<label for="community2">Community & Popularity</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="mobile2" value="Mobile Friendly">
+						<label for="mobile2">Mobile Friendly</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="stability2" value="Stability">
+						<label for="stability2">Stability</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="speed2" value="Speed">
+						<label for="speed2">Speed</label>
+					</p>
+					<p>
+						<input type="checkbox" name="improveFeat[]" id="readability2" value="Readability">
+						<label for="readability2">Code Readability</label>
+					</p>
+				</div>
+
+				<h2>Suggestions</h2>
+				<div class="row input_set">
+					<div class="input-lg col-sm-12">
+						<label class="big" for="suggestion">Do you recommend any other features that you would like to see added?</label>
+						<textarea name="suggestion" id="suggestion" class="materialize-textarea" data-length="300"></textarea>
 					</div>
-				</fieldset>
+				</div>
 
-				<fieldset>
-					<legend>Suggestions</legend>
-					<div class="row">
-						<div class="input-lg col-sm-12">
-							<textarea name="suggestion" id="suggestion" class="materialize-textarea" data-length="300"></textarea>
-							<label class="big" for="suggestion">Do you recommend any other features that you would like to see added?</label>
-						</div>
-
-
-						<div class="input-lg col-sm-12">
-							<textarea name="recommend" id="recommend" class="materialize-textarea" data-length="300"></textarea>
-							<label class="big" for="recommend">Do you recommend any other front-end frameworks not listed in this survey?</label>
-						</div>
-
-						<div class="text-center">
-							<button type="submit" name="Submit">Submit</button>
-						</div>
-
+				<div class="row input_set">
+					<div class="input-lg col-sm-12">
+						<label class="big" for="recommend">Do you recommend any other front-end frameworks not listed in this survey?</label>
+						<textarea name="recommend" id="recommend" class="materialize-textarea" data-length="300"></textarea>
 					</div>
-				</fieldset>
+				</div>
+
+				<div class="row">
+					<button class="btn btn-primary" type="submit" name="Submit">Submit</button>
+				</div>
+
+				</div>
 			</form>
 		</div>
 
