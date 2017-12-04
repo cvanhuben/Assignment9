@@ -35,7 +35,7 @@ session_start();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 
-    <!--Import materialize.css-->
+    <!--Import bootstrap.css-->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!--Import overrides.css-->
     <link type="text/css" rel="stylesheet" href="css/overrides.css">
