@@ -96,7 +96,9 @@
               }
           ?>
 
-			<a href="index.php" class="btn btn-primary">Back to Index</a>
+      <div class="form-group text-center">
+			  <a href="index.php" class="btn btn-primary">Back to Index</a>
+      </div>
     </div>
   </body>
 </html>

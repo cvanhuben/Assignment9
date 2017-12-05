@@ -97,7 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body class="bg-cover">
-    <div class="container card-container">
+    <div class="container card-container small">
       <h1 class="text-center">Admin Log-in</h1>
       <p class="text-center" id="welcome">Hey There! Welcome Back!</p>
 
