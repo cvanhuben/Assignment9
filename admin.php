@@ -89,8 +89,11 @@ $name = $_SESSION['username'];
 	      			<td>
 	       				<button class="edit_button btn btn-primary" id="edit_button<?php echo $frameworkSurvey['counter'];?>" value="edit" onclick="edit_row('<?php echo $frameworkSurvey['counter'];?>');">Edit
 	       				</button>
-	       				<button  class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" style="display:none" onclick="save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
+	       				
+	       				<button class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" style="display:none" onclick="alert('Record Saved'),save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
 	       				</button>
+
+
 	       				<!-- confirmation taken from http://www.javascripter.net/faq/confirm.htm -->
 	       				<button class="delete_button btn btn-primary" id="delete_button<?php echo $frameworkSurvey['counter'];?>" value="delete" onclick="if(confirm('Are you sure you want to delete?'))delete_row('<?php echo $frameworkSurvey['counter'];?>'),alert('Record Deleted');">Delete
 	       				</button>
@@ -129,6 +132,7 @@ $name = $_SESSION['username'];
     		$(save_button).show();
     	});
 	
+		
 	
 
     	// $('this').parent().find('save_button');
