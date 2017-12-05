@@ -108,16 +108,29 @@ $name = $_SESSION['username'];
 	    	</table>
 			</div>
 
-    	<div class="row">
+    	<!-- <div class="row">
     	   <a href="index.php">Back to Survey</a>
 
     	</div>
 
     	<div class="row">
 				<a class="btn btn-primary" href="logout.php" role="button">Logout</a>
-		</div>
+		</div> -->
 
     </div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<a href="index.php">< Back to Survey</a>
+					</div>
+					<div class="col-6 text-right">
+						<a class="btn btn-primary" href="logout.php" role="button">Logout</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 
     <!-- Downloading jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

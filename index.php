@@ -53,7 +53,7 @@
 			</div>
 		</div>
 
-		<footer>
+		<footer class="sticky">
 			<div class="container">
 				<div class="row">
 					<div class="col-6">
