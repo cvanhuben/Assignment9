@@ -103,7 +103,13 @@ session_start();
 
     	<div class="row">
     	   <a href="index.php">Back to Survey</a>
+    	  
     	</div>
+
+    	<div class="row">
+						<a class="btn btn-primary" href="logout.php" role="button">Logout</a>
+		</div>
+    	
     </div>
 
     <!-- Downloading jQuery -->
