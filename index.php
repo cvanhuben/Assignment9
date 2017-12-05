@@ -30,23 +30,24 @@
 
 		<div class="container">
 			<div class="row text-center">
-				<img class="align-center" src="images/icons.png" alt="icon" />
+				<img id="icons" class="align-center mx-auto" src="images/icons.png" alt="Framework Icons" />
 			</div>
 			<div class="row">
-				<div class="col-6">
-					<p>In the world of web design, to give a more straightforward definition,
+				<div class="col-lg-1 col-md-0 col-sm-0"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<p class="p-3">In the world of web design, to give a more straightforward definition,
 						a framework is defined as a package made up of a structure of files
 						and folders of standardized code (HTML, CSS, JS documents etc.) which
 						can be used to support the development of websites. Through our survey,
 						we want to find out your favorites!</p>
 				</div>
-				<div class="col-6">
+				<div class="col-lg-5 col-md-6 col-sm-12">
 					<div class="row">
-						<h2>Do you use any front end frameworks?<br>
+						<h2 class="p-3">Do you use any front end frameworks?<br>
 							Tell us about your experience!</h2>
 					</div>
 					<div class="row">
-						<a class="btn btn-primary" href="survey.php" role="button">Take the Survey!</a>
+						<a class="btn btn-primary mx-3" href="survey.php" role="button">Take the Survey!</a>
 					</div>
 				</div>
 			</div>

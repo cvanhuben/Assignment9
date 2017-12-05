@@ -52,11 +52,11 @@ $name = $_SESSION['username'];
   <body class="bg-cover">
 		<div class="container card-container">
     	<h1 class="text-center">Frameworks Survey: Database Table</h1>
-    	<p>Welcome <?php echo "$name"?>! This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
+    	<p class="px-5 pb-3">Welcome <?php echo "$name"?>! This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
 
     	<!-- <a href="logout.php">logout</a> -->
 
-			<div class="scrollable">
+			<div class="mx-5 scrollable">
 	    	<table class="table table-striped table-bordered table-hover">
 	    		<tr>
 	    			<th scope="col">ID</th>
@@ -89,7 +89,7 @@ $name = $_SESSION['username'];
 	      			<td>
 	       				<button class="edit_button btn btn-primary" id="edit_button<?php echo $frameworkSurvey['counter'];?>" value="edit" onclick="edit_row('<?php echo $frameworkSurvey['counter'];?>');">Edit
 	       				</button>
-	       				
+
 	       				<button class="save_button btn btn-primary" id="save_button<?php echo $frameworkSurvey['counter'];?>" value="save" style="display:none" onclick="alert('Record Saved'),save_row('<?php echo $frameworkSurvey['counter'];?>');">Save
 	       				</button>
 
@@ -131,9 +131,9 @@ $name = $_SESSION['username'];
 
     		$(save_button).show();
     	});
-	
-		
-	
+
+
+
 
     	// $('this').parent().find('save_button');
 

@@ -1,12 +1,13 @@
+/* THEME */
 .bg-cover {
   background-color: #687ade;
   background-image: url(../images/binary.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 50vh;
   display: block;
 }
-
 h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #fff;
@@ -35,9 +36,7 @@ a:hover {
   background-color: #2940BA;
 }
 
-.jumbotron {
-  padding: 8em;
-}
+/* MODULES */
 .card-container {
   margin-top: 5em;
   background-color: #fff;
@@ -53,6 +52,15 @@ a:hover {
   border-radius: 2em;
 }
 
+/* INDEX */
+.jumbotron {
+  padding: 8em;
+}
+#icons {
+  width: 60em;
+}
+
+/* SURVEY */
 form {
   padding-left: 5em;
   padding-right: 5em;
@@ -63,11 +71,24 @@ form {
 .input_set {
   margin-bottom: 3em;
 }
-
-.scrollable {
-  overflow: scroll;
+#submit {
+  padding-bottom: 2em;
 }
 
+/* ADMIN */
+.scrollable {
+  overflow: scroll;
+  max-height: 100vh;
+}
+.table {
+  width: 100%;
+}
+td > button {
+  margin-bottom: .5em;
+  width: 100%;
+}
+
+/* FOOTER */
 footer {
   position: absolute;
   bottom: 0;
