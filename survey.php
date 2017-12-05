@@ -156,8 +156,8 @@
 					<textarea name="recommend" class="form-control" id="recommend" rows="3"></textarea>
 				</div>
 
-				<div class="form-group text-center">
-					<button class="btn-lg btn-primary" type="submit" name="Submit">Submit</button>
+				<div class="row">
+					<button class="btn btn-primary" type="submit" name="Submit">Submit</button>
 				</div>
 
 				</div>

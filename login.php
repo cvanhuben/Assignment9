@@ -99,7 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body class="bg-cover">
     <div class="container card-container small">
       <h1 class="text-center">Admin Log-in</h1>
-      <p class="text-center">Hey There! Welcome Back!</p>
+      <p class="text-center" id="welcome">Hey There! Welcome Back!</p>
 
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
