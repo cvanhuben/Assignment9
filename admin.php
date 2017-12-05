@@ -58,7 +58,7 @@ $name = $_SESSION['username'];
 				<div class="col">
     			<h1 class="text-center">Admin View</h1>
 				</div>
-				<div class="col-2">
+				<div class="col-2 text-right">
 					<a class="mt-5 btn btn-pale" href="logout.php" role="button">Logout</a>
 				</div>
 			</div>

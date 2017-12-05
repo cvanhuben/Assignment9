@@ -36,8 +36,12 @@ a:hover {
   background-color: #2940BA;
 }
 .btn-pale {
-  background-color: #a9aac9;
+  background-color: rgba(0,0,0,.05);
   border: #2940BA;
+  color: #292b2c;
+}
+.btn-pale:hover {
+  background-color: #485DCE;
   color: #fff;
 }
 
