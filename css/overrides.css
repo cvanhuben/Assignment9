@@ -10,6 +10,7 @@
 h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #fff;
+  font-size: 3rem;
 }
 h2 {
   font-size: 1.25rem;
@@ -47,23 +48,17 @@ a:hover {
   color: #687ade;
   padding: 1em;
 }
-.card-container.small {
-  width: 50%;
-  padding-bottom: 4em;
-  border-radius: 2em;
-}
 
-#welcome{}
 
 form {
   padding-left: 5em;
   padding-right: 5em;
 }
-.form-group>label {
-  font-size: 1.25rem;
-}
 .input_set {
   margin-bottom: 3em;
+}
+.btn-lg {
+  margin-bottom: 1em;
 }
 
 footer {
