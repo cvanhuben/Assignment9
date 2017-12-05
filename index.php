@@ -30,7 +30,7 @@
 
 		<div class="container">
 			<div class="row text-center">
-				<img class="align-center" src="images/icons.png"/>
+				<img class="align-center" src="images/icons.png" alt="icon" />
 			</div>
 			<div class="row">
 				<div class="col-6">
@@ -42,7 +42,7 @@
 				</div>
 				<div class="col-6">
 					<div class="row">
-						<h2>Do you use any front end frameworks?</br>
+						<h2>Do you use any front end frameworks?<br>
 							Tell us about your experience!</h2>
 					</div>
 					<div class="row">
