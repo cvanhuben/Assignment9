@@ -56,6 +56,9 @@ form {
 .input_set {
   margin-bottom: 3em;
 }
+.btn-lg {
+  margin-bottom: 1em;
+}
 
 footer {
   position: absolute;
