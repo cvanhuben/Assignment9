@@ -23,7 +23,15 @@
 
 	<body class="bg-cover">
 		<div class="container card-container">
-			<h1 class="text-center">Frameworks Survey</h1>
+			<div class="mx-5 row">
+				<div class="col-2">
+					<a class="mt-5 btn btn-pale" href="index.php" role="button">< Home</a>
+				</div>
+				<div class="col">
+    			<h1 class="text-center">Frameworks Survey</h1>
+				</div>
+				<div class="col-2"></div>
+			</div>
 			<form method="post" action="database_action.php">
 
 				<div class="input_set">

@@ -51,10 +51,18 @@ $name = $_SESSION['username'];
 
   <body class="bg-cover">
 		<div class="container card-container">
-    	<h1 class="text-center">Frameworks Survey: Database Table</h1>
-    	<p class="px-5 pb-3">Welcome <?php echo "$name"?>! This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
-
-    	<!-- <a href="logout.php">logout</a> -->
+			<div class="mx-5 row">
+				<div class="col-2">
+					<a class="mt-5 btn btn-pale" href="index.php" role="button">< Survey</a>
+				</div>
+				<div class="col">
+    			<h1 class="text-center">Admin View</h1>
+				</div>
+				<div class="col-2">
+					<a class="mt-5 btn btn-pale" href="logout.php" role="button">Logout</a>
+				</div>
+			</div>
+			<p class="px-5 pb-3">Welcome <?php echo "$name"?>! This table represents the results from your user survey on frameworks. You may modify the data by clicking the "EDIT" button. Be sure to click "SAVE" after you are done editing. You also have the option to "DELETE" each row. This will update the MySQL database and you will be able to see your new, manipulated results.</p>
 
 			<div class="mx-5 scrollable">
 	    	<table class="table table-striped table-bordered table-hover">
@@ -107,30 +115,7 @@ $name = $_SESSION['username'];
 
 	    	</table>
 			</div>
-
-    	<!-- <div class="row">
-    	   <a href="index.php">Back to Survey</a>
-
-    	</div>
-
-    	<div class="row">
-				<a class="btn btn-primary" href="logout.php" role="button">Logout</a>
-		</div> -->
-
     </div>
-
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<a href="index.php">< Back to Survey</a>
-					</div>
-					<div class="col-6 text-right">
-						<a class="btn btn-primary" href="logout.php" role="button">Logout</a>
-					</div>
-				</div>
-			</div>
-		</footer>
 
     <!-- Downloading jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

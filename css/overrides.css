@@ -35,6 +35,11 @@ a:hover {
 .btn-primary:hover {
   background-color: #2940BA;
 }
+.btn-pale {
+  background-color: #a9aac9;
+  border: #2940BA;
+  color: #fff;
+}
 
 /* MODULES */
 .card-container {
@@ -42,7 +47,7 @@ a:hover {
   background-color: #fff;
   border-radius: 2em 2em 0 0;
 }
-.card-container>h1 {
+.card-container h1 {
   color: #687ade;
   padding: 1em;
 }
