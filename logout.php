@@ -1,3 +1,5 @@
+<!-- From class -->
+
 <?php
 // Initialize the session
 session_start();
